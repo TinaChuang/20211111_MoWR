@@ -1,0 +1,437 @@
+body {
+  font-family: "Noto Serif TC", "Lato","PingFang TC","Helvetica Neue","Helvetica", "微軟正黑體" ,"Arial","sans-serif";
+  background-color: #fff;
+}
+.img-fluid{
+  width: 100%;
+  height: auto;
+}
+
+.banner{
+  position: relative;
+  overflow: hidden;
+  .logo{
+    position: absolute;
+    z-index: 2;
+    top: 5px;
+    left: 5px;
+    width: 100px;
+    @media (min-width: 400px) {
+      width: 150px;
+    }
+    @media (min-width: 720px) {
+      width: 200px;
+    }
+    @media (min-width: 960px) {
+      width: 260px;
+    }
+  }
+  .words{
+    position: absolute;
+    z-index: 2;
+    top: 8%;
+    left: 50%;
+    height: 85%;
+    transform: translateX(-50%);
+  }
+  .flexslider{
+    .slides{
+      img{
+        display: block;
+        height: auto !important;
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+.iframe-wrapper{
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  .video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+.section-title{
+  writing-mode: vertical-lr;
+  font-size: 46px;
+  margin: 0;
+  @media (max-width: 720px) {
+    font-size: 30px;
+  }
+  .section-sub-title{
+    font-size: 18px;
+    @media (max-width: 720px) {
+      font-size: 18px;
+    }
+  }
+}
+
+
+.section-1{
+  background: linear-gradient(to bottom, rgba(222, 222, 222, 1) 0%, rgba(220, 220, 220, 0) 50%);
+  padding-bottom: 50px;
+  .section-title{
+    text-align: center;
+    writing-mode: horizontal-tb;
+    margin-top: 90px;
+    margin-bottom: 90px;
+  }
+  .section-centent{
+    text-align: center;
+    margin-bottom: 70px
+  }
+  .slider-wall{
+    overflow: hidden;
+    padding: 0;
+    img{
+      width: 100%;
+      min-width: 1000px;
+    }
+  }
+}
+
+.cross-bg{
+  background-image: url("../image/bg-paper.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  padding-top: 50px;
+  @media (max-width: 720px) {
+    background-image: url("../image/bg-paper-mobi.jpg");
+  }
+  .cloud{
+    display: block;
+    width: 120px;
+    margin: 0 auto 95px auto;
+  }
+}
+
+.section-2{
+  padding-bottom: 50px;
+  @media (min-width: 960px) {
+    padding-bottom: 200px;
+  }
+  .section-title{
+    position: relative;
+    margin: 0 auto 20px auto;
+    @media (min-width: 720px) {
+      position: absolute;
+      top: 0;
+      right: -10%;
+    }
+    @media (min-width: 960px) {
+      right: -11%;
+    }
+    @media (min-width: 1140px) {
+      right: -11%;
+    }
+  }
+  .section-sub-title{
+    margin-top: 0;
+    margin-top: 20px;
+    @media (min-width: 720px) {
+      margin-top: 5px;
+    }
+    @media (min-width: 960px) {
+      margin-top: 0;
+    }
+    @media (min-width: 1140px) {
+      margin-top: 30px;
+    }
+  }
+  .section-centent{}
+}
+
+.section-3{
+  margin-bottom: 100px;
+  @media (min-width: 960px) {
+    margin-bottom: 200px;
+  }
+  .section-title{
+    position: relative;
+    writing-mode: horizontal-tb;
+    margin: 0 auto 50px auto;
+    text-align: center;
+    @media (min-width: 720px) {
+      position: absolute;
+      writing-mode: vertical-lr;
+      margin: 0 auto 20px auto;
+      top: 0;
+      left: -15%;
+    }
+    @media (min-width: 960px) {
+      left: -11%;
+    }
+    @media (min-width: 1140px) {
+      left: -11%;
+    }
+  }
+  .section-sub-title{
+    margin-top: 0;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    @media (min-width: 720px) {
+      display: inline-block;
+      margin-top: 5px;
+    }
+    @media (min-width: 960px) {
+      margin-top: 0;
+    }
+    @media (min-width: 1140px) {
+      margin-top: 30px;
+    }
+  }
+  
+}
+
+.section-4{
+  background-image: url("../image/bg-temple.jpg");
+  background-size: 100% auto;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  .section-title{
+    position: relative;
+    writing-mode: horizontal-tb;
+    margin: 0 auto 50px auto;
+    text-align: center;
+    @media (min-width: 720px) {
+      position: absolute;
+      writing-mode: vertical-lr;
+      margin: 0 auto 20px auto;
+      top: 0;
+      left: -15%;
+    }
+    @media (min-width: 960px) {
+      left: -11%;
+    }
+    @media (min-width: 1140px) {
+      left: -11%;
+    }
+  }
+  .section-sub-title{
+    margin-top: 0;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    @media (min-width: 720px) {
+      display: inline-block;
+      margin-top: 5px;
+    }
+    @media (min-width: 960px) {
+      margin-top: 0;
+    }
+    @media (min-width: 1140px) {
+      margin-top: 30px;
+    }
+  }
+}
+
+footer{
+  padding-top: 20px;
+  text-align: center;
+  color: #555;
+}
+
+@media (min-width: 720px) {
+}
+@media (min-width: 960px) {
+}
+@media (min-width: 1140px) {
+}
+
+// 文章輪播
+.owl-carousel.article-carousel{
+  article{
+    color: #333;
+    .article-title{
+      font-size: 20px;
+      font-weight: normal;
+      margin-bottom: 20px;
+    }
+    .article-body{
+      margin-bottom: 30px;
+    }
+    a{
+      display: block;
+      text-align: right;
+      color: inherit;
+      &::after{
+        content: "";
+        display: inline-block;
+        width: 90px;
+        height: 10px;
+        background-image: url("../image/arrow-link.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+      }
+    }
+  }
+  .owl-nav{
+    button.owl-prev, button.owl-next{
+      position: absolute;
+      top: calc(50% - 2rem);
+      width: 2rem;
+      height: 2rem;
+      background-size: contain;
+      background-repeat: no-repeat;
+      span{
+        display: none;
+      }
+    }
+    button.owl-prev{
+      background-image: url("../image/arrow-pre.png");
+      left: -2rem;
+    }
+    button.owl-next{
+      background-image: url("../image/arrow-next.png");
+      right: -2rem;
+      background-position: center right;
+    }
+  }
+}
+
+// 翻牌效果
+.cardFlip{
+  .cardFlip-select{
+    .nav-tabs{
+      border: 0;
+      justify-content: center;
+      .nav-link{
+        border: 1px solid #000;
+        padding: .5rem 1rem;
+        border-radius: 0;
+        color: #000;
+        margin: .5rem;
+        &:hover, &.active{
+          background-color: #C1C1C1;
+          border-color: #C1C1C1;
+        }
+      }
+    }
+  }
+  .tab-pane{
+    height: 400px;
+    @media (min-width: 400px) {
+      height: 500px;
+    }
+    @media (min-width: 600px) {
+      height: 650px;
+    }
+    @media (min-width: 960px) {
+      height: 750px;
+    }
+  }
+  .cardFlip-centered-wrap{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    @media (min-width: 960px) {
+      padding-top: 70px;
+    }
+  }
+  .cardFlip-card-wrap{
+    position: relative;
+    width: 280px;
+    height: 280px;
+    @media (min-width: 400px) {
+      width: 350px;
+      height: 350px;
+    }
+    @media (min-width: 600px) {
+      width: 450px;
+      height: 450px;
+    }
+    @media (min-width: 960px) {
+      width: 600px;
+      height: 600px;
+    }
+  }
+  .cardFlip-card{
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: 0.5s all ease;
+    box-shadow: 0px 0px 10px #000;
+    width: 280px;
+    height: 280px;
+    @media (min-width: 400px) {
+      width: 350px;
+      height: 350px;
+    }
+    @media (min-width: 600px) {
+      width: 450px;
+      height: 450px;
+    }
+    @media (min-width: 960px) {
+      width: 600px;
+      height: 600px;
+    }
+    &.active{
+      transform: rotateY(180deg);
+    }
+    .cardFlip-card-front{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+    .cardFlip-card-back{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      transform: rotateY(180deg);
+    }
+  }
+}
+
+
+/* Feel free to change duration  */ 
+.animated{
+  animation-duration : 1000ms;
+  animation-fill-mode : both;
+}  
+/* .owl-animated-out - only for current item */ 
+/* This is very important class. Use z-index if you want move Out item above In item */ 
+.owl-animated-out{
+  z-index : 1 
+}
+/* .owl-animated-in - only for upcoming item
+/* This is very important class. Use z-index if you want move In item above Out item */ 
+.owl-animated-in{
+  z-index : 0 
+}
+/* .fadeOut is style taken from Animation.css and this is how it looks in owl.carousel.css:  */ 
+.fadeIn {
+  animation-name: fadeIn;
+}
+.fadeOut {
+  animation-name: fadeOut;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
