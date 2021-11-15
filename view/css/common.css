@@ -17,8 +17,8 @@ body {
 .banner .logo {
   position: absolute;
   z-index: 2;
-  top: 5px;
-  left: 5px;
+  top: 15px;
+  left: 20px;
   width: 100px;
 }
 
@@ -346,6 +346,17 @@ footer {
 
 .owl-carousel.article-carousel article {
   color: #333;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.owl-carousel.article-carousel article:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.owl-carousel.article-carousel article:hover a {
+  color: #B35955;
 }
 
 .owl-carousel.article-carousel article .article-title {
@@ -461,6 +472,13 @@ footer {
   position: relative;
   width: 280px;
   height: 280px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.cardFlip .cardFlip-card-wrap:hover {
+  -webkit-transform: translate(-15px, -15px);
+          transform: translate(-15px, -15px);
 }
 
 @media (min-width: 400px) {

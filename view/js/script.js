@@ -14,8 +14,8 @@
 
   $('.flexslider').flexslider({
     animation: "fade",
-    slideshowSpeed: 3000,
-    animationDuration: 3000,
+    slideshowSpeed: 2000,
+    animationDuration: 2000,
     directionNav: false,
     randomize: true,
     animationLoop: true,
@@ -24,7 +24,7 @@
 
   $('.owl-carousel.article-carousel').owlCarousel({
     loop: true,
-    margin: 20,
+    margin: 30,
     nav: true,
     responsive:{
       0:{

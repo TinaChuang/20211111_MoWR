@@ -13,8 +13,8 @@ body {
   .logo{
     position: absolute;
     z-index: 2;
-    top: 5px;
-    left: 5px;
+    top: 15px;
+    left: 20px;
     width: 100px;
     @media (min-width: 400px) {
       width: 150px;
@@ -251,6 +251,13 @@ footer{
 .owl-carousel.article-carousel{
   article{
     color: #333;
+    transition: all .3s;
+    &:hover{
+      transform: translateY(-10px);
+      a{
+        color: #B35955;
+      }
+    }
     .article-title{
       font-size: 20px;
       font-weight: normal;
@@ -342,6 +349,10 @@ footer{
     position: relative;
     width: 280px;
     height: 280px;
+    transition: all .3s;
+    &:hover{
+      transform: translate(-15px, -15px);
+    }
     @media (min-width: 400px) {
       width: 350px;
       height: 350px;
