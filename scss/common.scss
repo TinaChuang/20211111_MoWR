@@ -2,6 +2,14 @@ body {
   font-family: "Noto Serif TC", "Lato","PingFang TC","Helvetica Neue","Helvetica", "微軟正黑體" ,"Arial","sans-serif";
   background-color: #fff;
 }
+.ch-article-bold{
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 500;
+}
+.ch-article{
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 300;
+}
 .img-fluid{
   width: 100%;
   height: auto;
@@ -9,6 +17,8 @@ body {
 
 .banner{
   position: relative;
+  overflow: hidden;
+  height: 100vh;
   overflow: hidden;
   .logo{
     position: absolute;
@@ -31,15 +41,20 @@ body {
     z-index: 2;
     top: 8%;
     left: 50%;
-    height: 85%;
+    height: 75%;
     transform: translateX(-50%);
+    @media (max-width: 720px) {
+      transform: translateX(-35%);
+    }
   }
   .flexslider{
+    min-height: 100vh;
     .slides{
+      min-height: 100vh;
       img{
         display: block;
-        height: auto !important;
-        width: 100% !important;
+        // height: 100vh !important;
+        // width: auto !important;
       }
     }
   }
@@ -81,18 +96,32 @@ body {
     text-align: center;
     writing-mode: horizontal-tb;
     margin-top: 90px;
-    margin-bottom: 90px;
+    margin-bottom: 70px;
   }
   .section-centent{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+    line-height: 1.8rem;
+    font-size: 18px;
     text-align: center;
-    margin-bottom: 70px
+    margin-bottom: 70px;
   }
   .slider-wall{
+    position: relative;
     overflow: hidden;
+    height: 150px;
     padding: 0;
-    img{
-      width: 100%;
-      min-width: 1000px;
+    .slider-wal-content{
+      position: absolute;
+      width: 900%;
+      height: 150px;
+      background-image: url("../image/img-slider.jpg");
+      background-size: contain;
+      background-repeat: repeat-x;
+      animation: slider 150s linear infinite;
+      @media (min-width: 720px) {
+        animation: slider 380s linear infinite;
+      }
     }
   }
 }
@@ -260,13 +289,18 @@ footer{
     }
     .article-title{
       font-size: 20px;
-      font-weight: normal;
+      font-weight: 500;
       margin-bottom: 20px;
     }
     .article-body{
+      font-family: 'Noto Sans TC', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.5rem;
       margin-bottom: 30px;
     }
     a{
+      font-size: 17px;
       display: block;
       text-align: right;
       color: inherit;
@@ -446,3 +480,12 @@ footer{
   }
 }
 
+@keyframes slider {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: -800%;
+  }
+}

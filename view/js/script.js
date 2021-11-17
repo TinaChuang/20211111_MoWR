@@ -14,8 +14,8 @@
 
   $('.flexslider').flexslider({
     animation: "fade",
-    slideshowSpeed: 2000,
-    animationDuration: 2000,
+    slideshowSpeed: 3000,
+    animationDuration: 3000,
     directionNav: false,
     randomize: true,
     animationLoop: true,
@@ -50,6 +50,22 @@
   });
 
   function setBannerImg(){
+    let $window = $(window);
+    if($window.width() > $window.height()){
+      $(".bv-img").map((index, item)=>{
+        $(item).css({
+          'min-width': '100vw',
+          'min-height': '100vh'
+        });
+      });
+    }else{
+      $(".bv-img").map((index, item)=>{
+        $(item).css({
+          'min-width': '100vw',
+          'min-height': '100vh'
+        });
+      });
+    };
     if($(window).width() < 500){
       $(".bv-img").map((index, item)=>{
         $(item).attr("src", $(item).data("mb"));

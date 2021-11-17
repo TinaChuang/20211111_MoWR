@@ -4,6 +4,16 @@ body {
   background-color: #fff;
 }
 
+.ch-article-bold {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 500;
+}
+
+.ch-article {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 300;
+}
+
 .img-fluid {
   width: 100%;
   height: auto;
@@ -11,6 +21,8 @@ body {
 
 .banner {
   position: relative;
+  overflow: hidden;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -45,15 +57,28 @@ body {
   z-index: 2;
   top: 8%;
   left: 50%;
-  height: 85%;
+  height: 75%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
 
+@media (max-width: 720px) {
+  .banner .words {
+    -webkit-transform: translateX(-35%);
+            transform: translateX(-35%);
+  }
+}
+
+.banner .flexslider {
+  min-height: 100vh;
+}
+
+.banner .flexslider .slides {
+  min-height: 100vh;
+}
+
 .banner .flexslider .slides img {
   display: block;
-  height: auto !important;
-  width: 100% !important;
 }
 
 .iframe-wrapper {
@@ -107,22 +132,41 @@ body {
       -ms-writing-mode: lr-tb;
           writing-mode: horizontal-tb;
   margin-top: 90px;
-  margin-bottom: 90px;
+  margin-bottom: 70px;
 }
 
 .section-1 .section-centent {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 300;
+  line-height: 1.8rem;
+  font-size: 18px;
   text-align: center;
   margin-bottom: 70px;
 }
 
 .section-1 .slider-wall {
+  position: relative;
   overflow: hidden;
+  height: 150px;
   padding: 0;
 }
 
-.section-1 .slider-wall img {
-  width: 100%;
-  min-width: 1000px;
+.section-1 .slider-wall .slider-wal-content {
+  position: absolute;
+  width: 900%;
+  height: 150px;
+  background-image: url("../image/img-slider.jpg");
+  background-size: contain;
+  background-repeat: repeat-x;
+  -webkit-animation: slider 150s linear infinite;
+          animation: slider 150s linear infinite;
+}
+
+@media (min-width: 720px) {
+  .section-1 .slider-wall .slider-wal-content {
+    -webkit-animation: slider 380s linear infinite;
+            animation: slider 380s linear infinite;
+  }
 }
 
 .cross-bg {
@@ -361,15 +405,20 @@ footer {
 
 .owl-carousel.article-carousel article .article-title {
   font-size: 20px;
-  font-weight: normal;
+  font-weight: 500;
   margin-bottom: 20px;
 }
 
 .owl-carousel.article-carousel article .article-body {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5rem;
   margin-bottom: 30px;
 }
 
 .owl-carousel.article-carousel article a {
+  font-size: 17px;
   display: block;
   text-align: right;
   color: inherit;
@@ -622,5 +671,23 @@ footer {
   }
   to {
     opacity: 0;
+  }
+}
+
+@-webkit-keyframes slider {
+  from {
+    left: 0;
+  }
+  to {
+    left: -800%;
+  }
+}
+
+@keyframes slider {
+  from {
+    left: 0;
+  }
+  to {
+    left: -800%;
   }
 }
